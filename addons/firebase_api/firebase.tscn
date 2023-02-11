@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://crkd8dxfj14l7"]
+
+[ext_resource type="Script" path="res://addons/firebase_api/firebase.gd" id="1_vvkam"]
+[ext_resource type="Script" path="res://addons/firebase_api/auth/auth.gd" id="2_xquu1"]
+[ext_resource type="Script" path="res://addons/firebase_api/realtime/realtime.gd" id="3_mg8hg"]
+[ext_resource type="Script" path="res://addons/firebase_api/dynamiclinks/dynamiclinks.gd" id="4_i60eg"]
+[ext_resource type="Script" path="res://addons/firebase_api/firestore/firestore.gd" id="5_ohygq"]
+[ext_resource type="Script" path="res://addons/firebase_api/functions/functions.gd" id="6_nx5pw"]
+[ext_resource type="Script" path="res://addons/firebase_api/storage/storage.gd" id="7_i6glr"]
+
+[node name="Firebase" type="Node"]
+script = ExtResource("1_vvkam")
+
+[node name="Auth" type="HTTPRequest" parent="."]
+script = ExtResource("2_xquu1")
+
+[node name="Realtime" type="Node" parent="."]
+script = ExtResource("3_mg8hg")
+
+[node name="DynamicLinks" type="Node" parent="."]
+script = ExtResource("4_i60eg")
+
+[node name="Firestore" type="Node" parent="."]
+script = ExtResource("5_ohygq")
+
+[node name="Functions" type="Node" parent="."]
+script = ExtResource("6_nx5pw")
+
+[node name="Storage" type="Node" parent="."]
+script = ExtResource("7_i6glr")
